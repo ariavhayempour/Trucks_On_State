@@ -25,8 +25,8 @@ export default function Header() {
           <div className="flex items-center">
             <Link href="/">
               <div className="flex items-center cursor-pointer">
-                <Truck className="h-6 w-6 text-primary mr-2" />
-                <h1 className="text-2xl font-bold text-primary-700">
+                <Truck className="h-6 w-6 text-black mr-2" />
+                <h1 className="text-2xl font-bold text-black">
                   Trucks on State
                 </h1>
               </div>
