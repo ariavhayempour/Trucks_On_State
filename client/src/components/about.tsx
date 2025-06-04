@@ -1,5 +1,7 @@
 import { Truck, MapPin } from "lucide-react";
 
+import state_street_vimal_1 from "@assets/state-street-vimal-1.jpg";
+
 export default function About() {
   return (
     <section id="about" className="py-16 bg-white">
@@ -40,7 +42,7 @@ export default function About() {
           </div>
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+              src={state_street_vimal_1} 
               alt="Madison Wisconsin Capitol building" 
               className="rounded-xl shadow-lg w-full h-auto"
             />
