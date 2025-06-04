@@ -47,8 +47,8 @@ export default function SearchFilter({
                 size="sm"
                 onClick={() => onCategoryChange(category.value)}
                 className={selectedCategory === category.value 
-                  ? "bg-primary text-white" 
-                  : "bg-gray-200 text-gray-700 hover:bg-gray-300"
+                  ? "bg-primary text-white hover:bg-primary-600" 
+                  : "bg-gray-200 text-gray-700 hover:bg-primary hover:text-white"
                 }
               >
                 {category.label}

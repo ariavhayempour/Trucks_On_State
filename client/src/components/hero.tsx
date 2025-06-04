@@ -21,7 +21,7 @@ export default function Hero() {
         <div className="text-center">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Madison's Best<br />
-            <span className="text-black">Food Trucks</span>
+            <span className="text-primary">Food Trucks</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-gray-700">
             Discover amazing local food trucks right here on State Street and around Madison. 
@@ -30,14 +30,14 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               onClick={scrollToTrucks}
-              className="bg-black text-white font-semibold px-8 py-3 rounded-full hover:bg-gray-800 transition-colors"
+              className="bg-primary text-white font-semibold px-8 py-3 rounded-full hover:bg-primary-600 transition-colors"
             >
               Explore Food Trucks
             </Button>
             <Button 
               variant="outline"
               onClick={scrollToAbout}
-              className="border-2 border-black text-black font-semibold px-8 py-3 rounded-full hover:bg-black hover:text-white transition-colors"
+              className="border-2 border-primary text-primary font-semibold px-8 py-3 rounded-full hover:bg-primary hover:text-white transition-colors"
             >
               Learn More
             </Button>
