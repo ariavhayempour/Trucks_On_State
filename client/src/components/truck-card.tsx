@@ -1,0 +1,48 @@
+import { Link } from "wouter";
+import { MapPin, Star } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
+import { formatRating, capitalizeFirst } from "@/lib/utils";
+import type { FoodTruck } from "@shared/schema";
+
+interface TruckCardProps {
+  truck: FoodTruck;
+}
+
+export default function TruckCard({ truck }: TruckCardProps) {
+  return (
+    <Card className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+      <img 
+        src={truck.image} 
+        alt={`${truck.name} food truck`}
+        className="w-full h-48 object-cover"
+      />
+      <CardContent className="p-6">
+        <div className="flex items-center justify-between mb-2">
+          <h3 className="text-xl font-bold text-gray-900">{truck.name}</h3>
+          <div className="flex items-center">
+            <Star className="w-4 h-4 text-yellow-400 fill-current" />
+            <span className="ml-1 text-sm text-gray-600">{formatRating(truck.rating)}</span>
+          </div>
+        </div>
+        <p className="text-gray-600 mb-4">{truck.description}</p>
+        <div className="flex items-center text-sm text-gray-500 mb-4">
+          <MapPin className="w-4 h-4 mr-2" />
+          <span>{truck.location}</span>
+        </div>
+        <div className="flex items-center justify-between">
+          <span className={`text-sm font-medium ${
+            truck.isOpen ? 'text-secondary-600' : 'text-red-600'
+          }`}>
+            {truck.isOpen ? 'Open Now' : 'Closed'}
+          </span>
+          <Link href={`/truck/${truck.slug}`}>
+            <Button className="bg-primary text-white hover:bg-primary-600 transition-colors">
+              View Menu
+            </Button>
+          </Link>
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
