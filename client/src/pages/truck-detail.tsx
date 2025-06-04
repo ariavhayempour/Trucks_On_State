@@ -19,12 +19,12 @@ export default function TruckDetail() {
 
   if (error) {
     return (
-      <div className="min-h-screen bg-white">
+      <div className="min-h-screen bg-gray-50">
         <Header />
         <div className="max-w-4xl mx-auto px-4 py-16">
           <div className="text-center">
-            <h1 className="text-2xl font-bold text-black mb-4">Food Truck Not Found</h1>
-            <p className="text-gray-700 mb-8">The food truck you're looking for doesn't exist.</p>
+            <h1 className="text-2xl font-bold text-gray-900 mb-4">Food Truck Not Found</h1>
+            <p className="text-gray-600 mb-8">The food truck you're looking for doesn't exist.</p>
             <Link href="/">
               <Button>
                 <ArrowLeft className="w-4 h-4 mr-2" />
@@ -39,7 +39,7 @@ export default function TruckDetail() {
   }
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-50">
       <Header />
       
       <div className="max-w-6xl mx-auto px-4 py-8">
@@ -93,21 +93,21 @@ export default function TruckDetail() {
               <div className="space-y-6">
                 <div>
                   <div className="flex items-center gap-2 mb-2">
-                    <h1 className="text-3xl font-bold text-black">{truck.name}</h1>
+                    <h1 className="text-3xl font-bold text-gray-900">{truck.name}</h1>
                     <div className="flex items-center">
-                      <Star className="w-4 h-4 text-gray-600 fill-current" />
-                      <span className="ml-1 text-sm text-gray-700">{formatRating(truck.rating)}</span>
+                      <Star className="w-4 h-4 text-yellow-400 fill-current" />
+                      <span className="ml-1 text-sm text-gray-600">{formatRating(truck.rating)}</span>
                     </div>
                   </div>
-                  <p className="text-lg text-gray-700">{truck.description}</p>
+                  <p className="text-lg text-gray-600">{truck.description}</p>
                 </div>
 
                 <div className="space-y-3">
-                  <div className="flex items-center text-gray-700">
+                  <div className="flex items-center text-gray-600">
                     <MapPin className="w-5 h-5 mr-3" />
                     <span>{truck.location}</span>
                   </div>
-                  <div className="flex items-center text-gray-700">
+                  <div className="flex items-center text-gray-600">
                     <Phone className="w-5 h-5 mr-3" />
                     <span>{truck.phone}</span>
                   </div>
@@ -125,8 +125,8 @@ export default function TruckDetail() {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                       {Object.entries(truck.schedule).map(([day, hours]) => (
                         <div key={day} className="flex justify-between">
-                          <span className="font-medium text-black">{day}</span>
-                          <span className="text-gray-700">{hours}</span>
+                          <span className="font-medium">{day}</span>
+                          <span className="text-gray-600">{hours}</span>
                         </div>
                       ))}
                     </div>
@@ -146,10 +146,10 @@ export default function TruckDetail() {
                         <div key={index} className="border-b border-gray-200 pb-3 last:border-b-0">
                           <div className="flex justify-between items-start">
                             <div className="flex-1">
-                              <h4 className="font-medium text-black">{item.name}</h4>
-                              <p className="text-sm text-gray-700 mt-1">{item.description}</p>
+                              <h4 className="font-medium text-gray-900">{item.name}</h4>
+                              <p className="text-sm text-gray-600 mt-1">{item.description}</p>
                             </div>
-                            <span className="font-semibold text-black ml-4">{item.price}</span>
+                            <span className="font-semibold text-primary ml-4">{item.price}</span>
                           </div>
                         </div>
                       ))}

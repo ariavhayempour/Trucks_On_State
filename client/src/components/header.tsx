@@ -26,7 +26,7 @@ export default function Header() {
             <Link href="/">
               <div className="flex items-center cursor-pointer">
                 <Truck className="h-6 w-6 text-primary mr-2" />
-                <h1 className="text-2xl font-bold text-primary">
+                <h1 className="text-2xl font-bold text-primary-700">
                   Trucks on State
                 </h1>
               </div>
@@ -36,7 +36,7 @@ export default function Header() {
           <nav className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               <Link href="/">
-                <Button variant="ghost" className="text-primary hover:text-primary-700">
+                <Button variant="ghost" className="text-primary-700 hover:text-primary">
                   Home
                 </Button>
               </Link>
@@ -84,7 +84,7 @@ export default function Header() {
             <Link href="/">
               <Button 
                 variant="ghost" 
-                className="text-primary block w-full text-left"
+                className="text-primary-700 block w-full text-left"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home

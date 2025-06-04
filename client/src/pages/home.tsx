@@ -29,7 +29,7 @@ export default function Home() {
   }) || [];
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-gray-50">
       <Header />
       <Hero />
       <SearchFilter
@@ -42,10 +42,10 @@ export default function Home() {
       <section id="trucks" className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-black mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
               Featured Food Trucks
             </h2>
-            <p className="text-lg text-gray-700 max-w-2xl mx-auto">
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
               Each truck brings unique flavors and experiences to Madison's streets. 
               Click on any truck to see their full menu and schedule.
             </p>
@@ -78,7 +78,7 @@ export default function Home() {
           
           {trucks && filteredTrucks.length === 0 && !isLoading && (
             <div className="text-center py-12">
-              <p className="text-gray-700 text-lg">
+              <p className="text-gray-600 text-lg">
                 {searchQuery || selectedCategory !== "all" 
                   ? "No food trucks match your search criteria." 
                   : "No food trucks available at the moment."}
