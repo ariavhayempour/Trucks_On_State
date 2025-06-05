@@ -11,7 +11,6 @@ export const foodTrucks = pgTable("food_trucks", {
   category: text("category").notNull(),
   location: text("location").notNull(),
   phone: text("phone").notNull(),
-  rating: integer("rating").notNull(), // rating * 10 to store decimal as integer
   isOpen: boolean("is_open").notNull().default(false),
   menu: json("menu").$type<MenuItem[]>().notNull(),
   schedule: json("schedule").$type<Schedule>().notNull(),

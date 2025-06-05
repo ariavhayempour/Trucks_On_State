@@ -21,14 +21,13 @@ export class MemStorage implements IStorage {
   private seedData() {
     const sampleTrucks: InsertFoodTruck[] = [
       {
-        slug: "badger-burger",
-        name: "Badger Burger Co.",
+        slug: "fresh-cool",
+        name: "Fresh Cool Drinks",
         description: "Gourmet burgers with locally-sourced Wisconsin beef and fresh toppings",
         image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-        category: "burgers",
+        category: "asian",
         location: "State Street & Library Mall",
         phone: "(608) 555-0123",
-        rating: 48, // 4.8 * 10
         isOpen: true,
         menu: [
           { name: "Classic Badger Burger", price: "$12.99", description: "Wisconsin beef, cheese, lettuce, tomato, onion" },
@@ -55,7 +54,6 @@ export class MemStorage implements IStorage {
         category: "tacos",
         location: "Capitol Square",
         phone: "(608) 555-0124",
-        rating: 49, // 4.9 * 10
         isOpen: true,
         menu: [
           { name: "Carnitas Tacos", price: "$3.50", description: "Slow-cooked pork with onions and cilantro" },
@@ -83,7 +81,6 @@ export class MemStorage implements IStorage {
         category: "bbq",
         location: "University Avenue",
         phone: "(608) 555-0125",
-        rating: 47, // 4.7 * 10
         isOpen: false,
         menu: [
           { name: "Pulled Pork Sandwich", price: "$11.99", description: "Slow-smoked pulled pork with BBQ sauce" },
@@ -111,7 +108,6 @@ export class MemStorage implements IStorage {
         category: "desserts",
         location: "Memorial Union Terrace",
         phone: "(608) 555-0126",
-        rating: 46, // 4.6 * 10
         isOpen: true,
         menu: [
           { name: "Vanilla Bean Ice Cream", price: "$4.99", description: "Madagascar vanilla with local cream" },
@@ -139,7 +135,6 @@ export class MemStorage implements IStorage {
         category: "healthy",
         location: "Farmers Market",
         phone: "(608) 555-0127",
-        rating: 48, // 4.8 * 10
         isOpen: true,
         menu: [
           { name: "Seasonal Salad Bowl", price: "$12.99", description: "Mixed greens with seasonal vegetables" },
