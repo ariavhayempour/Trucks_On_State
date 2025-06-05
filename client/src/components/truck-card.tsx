@@ -1,8 +1,8 @@
 import { Link } from "wouter";
-import { MapPin, Star } from "lucide-react";
+import { MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { formatRating, capitalizeFirst } from "@/lib/utils";
+import { capitalizeFirst } from "@/lib/utils";
 import type { FoodTruck } from "@shared/schema";
 
 interface TruckCardProps {
@@ -18,12 +18,8 @@ export default function TruckCard({ truck }: TruckCardProps) {
         className="w-full h-48 object-cover"
       />
       <CardContent className="p-6">
-        <div className="flex items-center justify-between mb-2">
+        <div className="mb-2">
           <h3 className="text-xl font-bold text-gray-900">{truck.name}</h3>
-          <div className="flex items-center">
-            <Star className="w-4 h-4 text-yellow-400 fill-current" />
-            <span className="ml-1 text-sm text-gray-600">{formatRating(truck.rating)}</span>
-          </div>
         </div>
         <p className="text-gray-600 mb-4">{truck.description}</p>
         <div className="flex items-center text-sm text-gray-500 mb-4">

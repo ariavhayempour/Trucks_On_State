@@ -162,7 +162,6 @@ export class MemStorage implements IStorage {
         category: "asian",
         location: "State Street",
         phone: "(608) 555-0128",
-        rating: 45, // 4.5 * 10
         isOpen: false,
         menu: [
           { name: "Pad Thai", price: "$11.99", description: "Classic Thai noodles with tamarind sauce" },

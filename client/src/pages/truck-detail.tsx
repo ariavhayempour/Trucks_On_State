@@ -3,8 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { Link } from "wouter";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import { formatRating } from "@/lib/utils";
-import { ArrowLeft, MapPin, Phone, Star, Clock } from "lucide-react";
+import { ArrowLeft, MapPin, Phone, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -92,12 +91,8 @@ export default function TruckDetail() {
               {/* Truck Info */}
               <div className="space-y-6">
                 <div>
-                  <div className="flex items-center gap-2 mb-2">
+                  <div className="mb-2">
                     <h1 className="text-3xl font-bold text-gray-900">{truck.name}</h1>
-                    <div className="flex items-center">
-                      <Star className="w-4 h-4 text-yellow-400 fill-current" />
-                      <span className="ml-1 text-sm text-gray-600">{formatRating(truck.rating)}</span>
-                    </div>
                   </div>
                   <p className="text-lg text-gray-600">{truck.description}</p>
                 </div>
