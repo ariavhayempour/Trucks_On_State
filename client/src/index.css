@@ -145,31 +145,53 @@
   @apply w-6 h-6 mr-2;
 }
 
-.social-links {
+/* Social Media Specific Classes */
+.social-media-container {
   @apply flex space-x-4;
 }
 
-.social-link {
+.facebook-link {
   @apply text-gray-300 hover:text-white transition-colors;
 }
 
-.social-icon {
+.twitter-link {
+  @apply text-gray-300 hover:text-white transition-colors;
+}
+
+.instagram-link {
+  @apply text-gray-300 hover:text-white transition-colors;
+}
+
+.facebook-icon {
   @apply w-5 h-5;
 }
 
-.navigation-title {
+.twitter-icon {
+  @apply w-5 h-5;
+}
+
+.instagram-icon {
+  @apply w-5 h-5;
+}
+
+/* Quick Links Navigation Classes */
+.quick-links-title {
   @apply text-lg font-semibold mb-4;
 }
 
-.navigation-list {
+.quick-links-list {
   @apply space-y-2;
 }
 
-.navigation-link {
+.home-link {
   @apply text-gray-300 hover:text-white transition-colors cursor-pointer;
 }
 
-.navigation-button {
+.food-trucks-button {
+  @apply text-gray-300 hover:text-white transition-colors text-left;
+}
+
+.about-button {
   @apply text-gray-300 hover:text-white transition-colors text-left;
 }
 

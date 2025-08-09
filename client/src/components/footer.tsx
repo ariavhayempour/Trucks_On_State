@@ -19,24 +19,24 @@ export default function Footer() {
               <Truck className="brand-icon" />
               Trucks on State
             </h3>
-            <div className="social-links">
-              <a href="#" className="social-link">
-                <FaFacebook className="social-icon" />
+            <div className="social-media-container">
+              <a href="#" className="facebook-link">
+                <FaFacebook className="facebook-icon" />
               </a>
-              <a href="#" className="social-link">
-                <FaTwitter className="social-icon" />
+              <a href="#" className="twitter-link">
+                <FaTwitter className="twitter-icon" />
               </a>
-              <a href="#" className="social-link">
-                <FaInstagram className="social-icon" />
+              <a href="#" className="instagram-link">
+                <FaInstagram className="instagram-icon" />
               </a>
             </div>
           </div>
           <div>
-            <h4 className="navigation-title">Quick Links</h4>
-            <ul className="navigation-list">
+            <h4 className="quick-links-title">Quick Links</h4>
+            <ul className="quick-links-list">
               <li>
                 <Link href="/">
-                  <span className="navigation-link">
+                  <span className="home-link">
                     Home
                   </span>
                 </Link>
@@ -44,7 +44,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => scrollToSection('trucks')}
-                  className="navigation-button"
+                  className="food-trucks-button"
                 >
                   Food Trucks
                 </button>
@@ -52,7 +52,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => scrollToSection('about')}
-                  className="navigation-button"
+                  className="about-button"
                 >
                   About
                 </button>
