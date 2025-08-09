@@ -29,7 +29,7 @@ export default function Home() {
   }) || [];
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="home-page-container">
       <Header />
       <Hero />
       <SearchFilter
@@ -39,36 +39,36 @@ export default function Home() {
         onCategoryChange={setSelectedCategory}
       />
       
-      <section id="trucks" className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+      <section id="trucks" className="home-trucks-section">
+        <div className="home-trucks-container">
+          <div className="home-trucks-header">
+            <h2 className="home-trucks-title">
               Featured Food Trucks
             </h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+            <p className="home-trucks-description">
               Each truck brings unique flavors and experiences to Madison's streets. 
               Click on any truck to see their full menu and schedule.
             </p>
           </div>
           
           {error && (
-            <div className="text-center py-8">
-              <p className="text-red-600">Failed to load food trucks. Please try again later.</p>
+            <div className="home-trucks-error">
+              <p className="home-trucks-error-message">Failed to load food trucks. Please try again later.</p>
             </div>
           )}
           
           {isLoading && (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="home-trucks-loading-grid">
               {Array.from({ length: 6 }).map((_, i) => (
-                <div key={i} className="bg-white rounded-xl shadow-lg overflow-hidden">
-                  <Skeleton className="w-full h-48" />
-                  <div className="p-6">
-                    <Skeleton className="h-6 w-3/4 mb-2" />
-                    <Skeleton className="h-4 w-full mb-4" />
-                    <Skeleton className="h-4 w-1/2 mb-4" />
-                    <div className="flex justify-between items-center">
-                      <Skeleton className="h-4 w-16" />
-                      <Skeleton className="h-8 w-20" />
+                <div key={i} className="home-truck-skeleton-card">
+                  <Skeleton className="home-truck-skeleton-image" />
+                  <div className="home-truck-skeleton-content">
+                    <Skeleton className="home-truck-skeleton-title" />
+                    <Skeleton className="home-truck-skeleton-description" />
+                    <Skeleton className="home-truck-skeleton-location" />
+                    <div className="home-truck-skeleton-footer">
+                      <Skeleton className="home-truck-skeleton-status" />
+                      <Skeleton className="home-truck-skeleton-button" />
                     </div>
                   </div>
                 </div>
@@ -77,8 +77,8 @@ export default function Home() {
           )}
           
           {trucks && filteredTrucks.length === 0 && !isLoading && (
-            <div className="text-center py-12">
-              <p className="text-gray-600 text-lg">
+            <div className="home-trucks-empty-state">
+              <p className="home-trucks-empty-message">
                 {searchQuery || selectedCategory !== "all" 
                   ? "No food trucks match your search criteria." 
                   : "No food trucks available at the moment."}
@@ -87,7 +87,7 @@ export default function Home() {
           )}
           
           {trucks && filteredTrucks.length > 0 && (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="home-trucks-active-grid">
               {filteredTrucks.map((truck) => (
                 <TruckCard key={truck.id} truck={truck} />
               ))}

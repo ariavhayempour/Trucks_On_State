@@ -19,44 +19,44 @@ export default function Header() {
   };
 
   return (
-    <header className="bg-white shadow-sm sticky top-0 z-50">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
-          <div className="flex items-center">
+    <header className="main-header">
+      <div className="header-container">
+        <div className="header-content">
+          <div className="brand-logo-section">
             <Link href="/">
-              <div className="flex items-center cursor-pointer">
-                <Truck className="h-6 w-6 text-primary mr-2" />
-                <h1 className="text-2xl font-bold text-primary-700">
+              <div className="brand-logo-link">
+                <Truck className="brand-logo-icon" />
+                <h1 className="brand-logo-text">
                   Trucks on State
                 </h1>
               </div>
             </Link>
           </div>
           
-          <nav className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-4">
+          <nav className="desktop-navigation">
+            <div className="desktop-nav-links">
               <Link href="/">
-                <Button variant="ghost" className="text-primary-700 hover:text-primary">
+                <Button variant="ghost" className="home-nav-button">
                   Home
                 </Button>
               </Link>
               <Button 
                 variant="ghost" 
-                className="text-gray-700 hover:text-primary"
+                className="food-trucks-nav-button"
                 onClick={() => scrollToSection('trucks')}
               >
                 Food Trucks
               </Button>
               <Button 
                 variant="ghost" 
-                className="text-gray-700 hover:text-primary"
+                className="about-nav-button"
                 onClick={() => scrollToSection('about')}
               >
                 About
               </Button>
               <Button 
                 variant="ghost" 
-                className="text-gray-700 hover:text-primary"
+                className="contact-nav-button"
                 onClick={() => scrollToSection('contact')}
               >
                 Contact
@@ -64,14 +64,14 @@ export default function Header() {
             </div>
           </nav>
           
-          <div className="md:hidden">
+          <div className="mobile-menu-section">
             <Button
               variant="ghost"
               size="sm"
               onClick={toggleMobileMenu}
-              className="text-gray-700 hover:text-primary"
+              className="mobile-menu-toggle"
             >
-              {isMobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+              {isMobileMenuOpen ? <X className="mobile-menu-close-icon" /> : <Menu className="mobile-menu-open-icon" />}
             </Button>
           </div>
         </div>
@@ -79,12 +79,12 @@ export default function Header() {
       
       {/* Mobile menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+        <div className="mobile-dropdown-menu">
+          <div className="mobile-menu-container">
             <Link href="/">
               <Button 
                 variant="ghost" 
-                className="text-primary-700 block w-full text-left"
+                className="mobile-home-button"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Home
@@ -92,21 +92,21 @@ export default function Header() {
             </Link>
             <Button 
               variant="ghost" 
-              className="text-gray-700 hover:text-primary block w-full text-left"
+              className="mobile-food-trucks-button"
               onClick={() => scrollToSection('trucks')}
             >
               Food Trucks
             </Button>
             <Button 
               variant="ghost" 
-              className="text-gray-700 hover:text-primary block w-full text-left"
+              className="mobile-about-button"
               onClick={() => scrollToSection('about')}
             >
               About
             </Button>
             <Button 
               variant="ghost" 
-              className="text-gray-700 hover:text-primary block w-full text-left"
+              className="mobile-contact-button"
               onClick={() => scrollToSection('contact')}
             >
               Contact

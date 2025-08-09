@@ -23,46 +23,47 @@ export default function TruckGrid() {
   return (
     <>
       <SearchFilter
+        searchQuery={searchTerm}
         onSearchChange={setSearchTerm}
-        onFilterChange={setSelectedFilter}
-        selectedFilter={selectedFilter}
+        selectedCategory={selectedFilter}
+        onCategoryChange={setSelectedFilter}
       />
       
-      <section id="trucks" className="py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Featured Food Trucks</h2>
-            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+      <section id="trucks" className="trucks-listing-section">
+        <div className="trucks-listing-container">
+          <div className="trucks-listing-header">
+            <h2 className="trucks-listing-title">Featured Food Trucks</h2>
+            <p className="trucks-listing-description">
               Each truck brings unique flavors and experiences to Madison's streets. Click on any truck to see their full menu and schedule.
             </p>
           </div>
           
           {isLoading ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="trucks-loading-grid">
               {[1, 2, 3, 4, 5, 6].map((i) => (
-                <div key={i} className="bg-white rounded-xl shadow-lg overflow-hidden">
-                  <Skeleton className="w-full h-48" />
-                  <div className="p-6 space-y-4">
-                    <Skeleton className="h-6 w-48" />
-                    <Skeleton className="h-4 w-full" />
-                    <Skeleton className="h-4 w-32" />
-                    <div className="flex justify-between items-center">
-                      <Skeleton className="h-4 w-16" />
-                      <Skeleton className="h-8 w-20" />
+                <div key={i} className="truck-skeleton-card">
+                  <Skeleton className="truck-skeleton-image" />
+                  <div className="truck-skeleton-content">
+                    <Skeleton className="truck-skeleton-title" />
+                    <Skeleton className="truck-skeleton-description" />
+                    <Skeleton className="truck-skeleton-location" />
+                    <div className="truck-skeleton-footer">
+                      <Skeleton className="truck-skeleton-status" />
+                      <Skeleton className="truck-skeleton-button" />
                     </div>
                   </div>
                 </div>
               ))}
             </div>
           ) : filteredTrucks && filteredTrucks.length > 0 ? (
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="trucks-active-grid">
               {filteredTrucks.map((truck) => (
                 <TruckCard key={truck.id} truck={truck} />
               ))}
             </div>
           ) : (
-            <div className="text-center py-12">
-              <p className="text-lg text-gray-600">
+            <div className="trucks-empty-state">
+              <p className="trucks-empty-message">
                 {searchTerm || selectedFilter !== "all" 
                   ? "No food trucks match your search criteria." 
                   : "No food trucks available at the moment."

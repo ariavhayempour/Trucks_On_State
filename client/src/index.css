@@ -202,3 +202,584 @@
 .copyright-text {
   @apply text-gray-300;
 }
+
+/* Header Component Classes */
+.main-header {
+  @apply bg-white shadow-sm sticky top-0 z-50;
+}
+
+.header-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.header-content {
+  @apply flex justify-between items-center h-16;
+}
+
+.brand-logo-section {
+  @apply flex items-center;
+}
+
+.brand-logo-link {
+  @apply flex items-center cursor-pointer;
+}
+
+.brand-logo-icon {
+  @apply h-6 w-6 text-primary mr-2;
+}
+
+.brand-logo-text {
+  @apply text-2xl font-bold text-primary-700;
+}
+
+.desktop-navigation {
+  @apply hidden md:block;
+}
+
+.desktop-nav-links {
+  @apply ml-10 flex items-baseline space-x-4;
+}
+
+.home-nav-button {
+  @apply text-primary-700 hover:text-primary;
+}
+
+.food-trucks-nav-button {
+  @apply text-gray-700 hover:text-primary;
+}
+
+.about-nav-button {
+  @apply text-gray-700 hover:text-primary;
+}
+
+.contact-nav-button {
+  @apply text-gray-700 hover:text-primary;
+}
+
+.mobile-menu-section {
+  @apply md:hidden;
+}
+
+.mobile-menu-toggle {
+  @apply text-gray-700 hover:text-primary;
+}
+
+.mobile-menu-close-icon {
+  @apply h-6 w-6;
+}
+
+.mobile-menu-open-icon {
+  @apply h-6 w-6;
+}
+
+.mobile-dropdown-menu {
+  @apply md:hidden;
+}
+
+.mobile-menu-container {
+  @apply px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t;
+}
+
+.mobile-home-button {
+  @apply text-primary-700 block w-full text-left;
+}
+
+.mobile-food-trucks-button {
+  @apply text-gray-700 hover:text-primary block w-full text-left;
+}
+
+.mobile-about-button {
+  @apply text-gray-700 hover:text-primary block w-full text-left;
+}
+
+.mobile-contact-button {
+  @apply text-gray-700 hover:text-primary block w-full text-left;
+}
+
+/* Hero Component Classes */
+.hero-section {
+  @apply relative hero-gradient text-white;
+}
+
+.hero-overlay {
+  @apply absolute inset-0 bg-black bg-opacity-40;
+}
+
+.hero-content-container {
+  @apply relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24;
+}
+
+.hero-text-center {
+  @apply text-center;
+}
+
+.hero-main-title {
+  @apply text-4xl md:text-6xl font-bold mb-6;
+}
+
+.hero-accent-text {
+  @apply text-accent-yellow;
+}
+
+.hero-description {
+  @apply text-xl md:text-2xl mb-8 max-w-3xl mx-auto;
+}
+
+.hero-buttons-container {
+  @apply flex flex-col sm:flex-row gap-4 justify-center;
+}
+
+.explore-trucks-button {
+  @apply bg-accent-yellow text-gray-900 font-semibold px-8 py-3 rounded-full hover:bg-yellow-300 transition-colors;
+}
+
+.learn-more-button {
+  @apply border-2 border-white font-semibold px-8 py-3 rounded-full hover:bg-white transition-colors text-[#000000];
+}
+
+/* Search Filter Component Classes */
+.search-filter-section {
+  @apply bg-white py-8 border-b;
+}
+
+.search-filter-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.search-filter-content {
+  @apply flex flex-col md:flex-row gap-4 items-center justify-between;
+}
+
+.search-input-container {
+  @apply relative flex-1 max-w-md;
+}
+
+.search-input-icon {
+  @apply absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 h-4 w-4;
+}
+
+.food-truck-search-input {
+  @apply pl-10;
+}
+
+.category-filter-buttons {
+  @apply flex flex-wrap gap-2;
+}
+
+.all-category-active {
+  @apply bg-primary text-white;
+}
+
+.all-category-inactive {
+  @apply bg-gray-200 text-gray-700 hover:bg-gray-300;
+}
+
+.burgers-category-active {
+  @apply bg-primary text-white;
+}
+
+.burgers-category-inactive {
+  @apply bg-gray-200 text-gray-700 hover:bg-gray-300;
+}
+
+.tacos-category-active {
+  @apply bg-primary text-white;
+}
+
+.tacos-category-inactive {
+  @apply bg-gray-200 text-gray-700 hover:bg-gray-300;
+}
+
+.bbq-category-active {
+  @apply bg-primary text-white;
+}
+
+.bbq-category-inactive {
+  @apply bg-gray-200 text-gray-700 hover:bg-gray-300;
+}
+
+.desserts-category-active {
+  @apply bg-primary text-white;
+}
+
+.desserts-category-inactive {
+  @apply bg-gray-200 text-gray-700 hover:bg-gray-300;
+}
+
+.healthy-category-active {
+  @apply bg-primary text-white;
+}
+
+.healthy-category-inactive {
+  @apply bg-gray-200 text-gray-700 hover:bg-gray-300;
+}
+
+.asian-category-active {
+  @apply bg-primary text-white;
+}
+
+.asian-category-inactive {
+  @apply bg-gray-200 text-gray-700 hover:bg-gray-300;
+}
+
+/* Truck Card Component Classes */
+.food-truck-card {
+  @apply bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300;
+}
+
+.truck-card-image {
+  @apply w-full h-48 object-cover;
+}
+
+.truck-card-content {
+  @apply p-6;
+}
+
+.truck-card-header {
+  @apply mb-2;
+}
+
+.truck-card-title {
+  @apply text-xl font-bold text-gray-900;
+}
+
+.truck-card-description {
+  @apply text-gray-600 mb-4;
+}
+
+.truck-card-location {
+  @apply flex items-center text-sm text-gray-500 mb-4;
+}
+
+.truck-location-icon {
+  @apply w-4 h-4 mr-2;
+}
+
+.truck-location-text {
+  @apply text-gray-500;
+}
+
+.truck-card-footer {
+  @apply flex items-center justify-between;
+}
+
+.truck-status {
+  @apply text-sm font-medium;
+}
+
+.truck-status-open {
+  @apply text-secondary-600;
+}
+
+.truck-status-closed {
+  @apply text-red-600;
+}
+
+.view-menu-button {
+  @apply bg-primary text-white hover:bg-primary transition-colors;
+}
+
+/* About Component Classes */
+.about-section {
+  @apply py-16 bg-white;
+}
+
+.about-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.about-content-grid {
+  @apply grid grid-cols-1 lg:grid-cols-2 gap-12 items-center;
+}
+
+.about-text-content {
+  @apply space-y-6;
+}
+
+.about-section-title {
+  @apply text-3xl md:text-4xl font-bold text-gray-900 mb-6;
+}
+
+.about-description-first {
+  @apply text-lg text-gray-600 mb-6;
+}
+
+.about-description-second {
+  @apply text-lg text-gray-600 mb-6;
+}
+
+.about-stats-container {
+  @apply flex flex-col sm:flex-row gap-4;
+}
+
+.food-trucks-stat {
+  @apply flex items-center;
+}
+
+.food-trucks-stat-icon-bg {
+  @apply bg-primary/10 rounded-full p-3 mr-4;
+}
+
+.food-trucks-stat-icon {
+  @apply w-6 h-6 text-primary;
+}
+
+.food-trucks-stat-content {
+  @apply space-y-1;
+}
+
+.food-trucks-stat-number {
+  @apply font-semibold text-gray-900;
+}
+
+.food-trucks-stat-label {
+  @apply text-sm text-gray-600;
+}
+
+.locations-stat {
+  @apply flex items-center;
+}
+
+.locations-stat-icon-bg {
+  @apply bg-secondary/10 rounded-full p-3 mr-4;
+}
+
+.locations-stat-icon {
+  @apply w-6 h-6 text-secondary;
+}
+
+.locations-stat-content {
+  @apply space-y-1;
+}
+
+.locations-stat-number {
+  @apply font-semibold text-gray-900;
+}
+
+.locations-stat-label {
+  @apply text-sm text-gray-600;
+}
+
+.about-image-container {
+  @apply flex justify-center;
+}
+
+.about-hero-image {
+  @apply rounded-xl shadow-lg w-full h-auto;
+}
+
+/* Newsletter Component Classes */
+.newsletter-section {
+  @apply py-16 hero-gradient;
+}
+
+.newsletter-container {
+  @apply max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center;
+}
+
+.newsletter-title {
+  @apply text-3xl md:text-4xl font-bold text-white mb-4;
+}
+
+.newsletter-description {
+  @apply text-xl text-white/90 mb-8;
+}
+
+.newsletter-form {
+  @apply flex flex-col sm:flex-row gap-4 max-w-md mx-auto;
+}
+
+.newsletter-email-input {
+  @apply flex-1 bg-white;
+}
+
+.newsletter-subscribe-button {
+  @apply bg-accent-yellow text-gray-900 font-semibold hover:bg-yellow-300 transition-colors;
+}
+
+/* Truck Grid Component Classes */
+.trucks-listing-section {
+  @apply py-16;
+}
+
+.trucks-listing-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.trucks-listing-header {
+  @apply text-center mb-12;
+}
+
+.trucks-listing-title {
+  @apply text-3xl md:text-4xl font-bold text-gray-900 mb-4;
+}
+
+.trucks-listing-description {
+  @apply text-lg text-gray-600 max-w-2xl mx-auto;
+}
+
+.trucks-loading-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+}
+
+.truck-skeleton-card {
+  @apply bg-white rounded-xl shadow-lg overflow-hidden;
+}
+
+.truck-skeleton-image {
+  @apply w-full h-48;
+}
+
+.truck-skeleton-content {
+  @apply p-6 space-y-4;
+}
+
+.truck-skeleton-title {
+  @apply h-6 w-48;
+}
+
+.truck-skeleton-description {
+  @apply h-4 w-full;
+}
+
+.truck-skeleton-location {
+  @apply h-4 w-32;
+}
+
+.truck-skeleton-footer {
+  @apply flex justify-between items-center;
+}
+
+.truck-skeleton-status {
+  @apply h-4 w-16;
+}
+
+.truck-skeleton-button {
+  @apply h-8 w-20;
+}
+
+.trucks-active-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+}
+
+.trucks-empty-state {
+  @apply text-center py-12;
+}
+
+.trucks-empty-message {
+  @apply text-lg text-gray-600;
+}
+
+/* Home Page Classes */
+.home-page-container {
+  @apply min-h-screen bg-gray-50;
+}
+
+.home-trucks-section {
+  @apply py-16;
+}
+
+.home-trucks-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.home-trucks-header {
+  @apply text-center mb-12;
+}
+
+.home-trucks-title {
+  @apply text-3xl md:text-4xl font-bold text-gray-900 mb-4;
+}
+
+.home-trucks-description {
+  @apply text-lg text-gray-600 max-w-2xl mx-auto;
+}
+
+.home-trucks-error {
+  @apply text-center py-8;
+}
+
+.home-trucks-error-message {
+  @apply text-red-600;
+}
+
+.home-trucks-loading-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+}
+
+.home-truck-skeleton-card {
+  @apply bg-white rounded-xl shadow-lg overflow-hidden;
+}
+
+.home-truck-skeleton-image {
+  @apply w-full h-48;
+}
+
+.home-truck-skeleton-content {
+  @apply p-6;
+}
+
+.home-truck-skeleton-title {
+  @apply h-6 w-3/4 mb-2;
+}
+
+.home-truck-skeleton-description {
+  @apply h-4 w-full mb-4;
+}
+
+.home-truck-skeleton-location {
+  @apply h-4 w-1/2 mb-4;
+}
+
+.home-truck-skeleton-footer {
+  @apply flex justify-between items-center;
+}
+
+.home-truck-skeleton-status {
+  @apply h-4 w-16;
+}
+
+.home-truck-skeleton-button {
+  @apply h-8 w-20;
+}
+
+.home-trucks-empty-state {
+  @apply text-center py-12;
+}
+
+.home-trucks-empty-message {
+  @apply text-gray-600 text-lg;
+}
+
+.home-trucks-active-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+}
+
+/* Not Found Page Classes */
+.not-found-page-container {
+  @apply min-h-screen w-full flex items-center justify-center bg-gray-50;
+}
+
+.not-found-card {
+  @apply w-full max-w-md mx-4;
+}
+
+.not-found-card-content {
+  @apply pt-6;
+}
+
+.not-found-header {
+  @apply flex mb-4 gap-2;
+}
+
+.not-found-icon {
+  @apply h-8 w-8 text-red-500;
+}
+
+.not-found-title {
+  @apply text-2xl font-bold text-gray-900;
+}
+
+.not-found-description {
+  @apply mt-4 text-sm text-gray-600;
+}
