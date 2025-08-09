@@ -29,6 +29,12 @@ export class MemStorage implements IStorage {
         category: "asian",
         location: "State Street & Library Mall",
         phone: "N/A",
+        businessLinks: {
+          website: "https://freshcooldrinks.com",
+          facebook: "https://facebook.com/freshcooldrinks",
+          instagram: "https://instagram.com/freshcooldrinks",
+          orderOnline: "https://doordash.com/store/fresh-cool-drinks"
+        },
         menu: [
           { name: "Classic Badger Burger", price: "$12.99", description: "Wisconsin beef, cheese, lettuce, tomato, onion" },
           { name: "Cheese Curd Burger", price: "$14.99", description: "Beef burger topped with fried cheese curds" },
@@ -56,6 +62,12 @@ export class MemStorage implements IStorage {
         category: "sandwiches",
         location: "State Street & Library Mall",
         phone: "TBD",
+        businessLinks: {
+          website: "https://toastmadison.com",
+          facebook: "https://facebook.com/toastmadison",
+          instagram: "https://instagram.com/toastmadison",
+          orderOnline: "https://grubhub.com/restaurant/toast-madison"
+        },
         menu: [
           { name: "Carnitas Tacos", price: "$3.50", description: "Slow-cooked pork with onions and cilantro" },
           { name: "Carne Asada Tacos", price: "$3.75", description: "Grilled steak with fresh salsa verde" },
@@ -84,6 +96,12 @@ export class MemStorage implements IStorage {
         category: "bbq",
         location: "University Avenue",
         phone: "(608) 555-0125",
+        businessLinks: {
+          website: "https://smokysbbqmadison.com",
+          facebook: "https://facebook.com/smokysbbq",
+          instagram: "https://instagram.com/smokysbbqmadison",
+          orderOnline: "https://ubereats.com/store/smokys-bbq"
+        },
         menu: [
           { name: "Pulled Pork Sandwich", price: "$11.99", description: "Slow-smoked pulled pork with BBQ sauce" },
           { name: "Brisket Platter", price: "$16.99", description: "Sliced brisket with two sides" },
@@ -110,6 +128,12 @@ export class MemStorage implements IStorage {
         category: "desserts",
         location: "Memorial Union Terrace",
         phone: "(608) 555-0126",
+        businessLinks: {
+          website: "https://sweetdreamsicecream.com",
+          facebook: "https://facebook.com/sweetdreamsmadison",
+          instagram: "https://instagram.com/sweetdreamsicecream",
+          orderOnline: "https://sweetdreamsicecream.com/order"
+        },
         menu: [
           { name: "Vanilla Bean Ice Cream", price: "$4.99", description: "Madagascar vanilla with local cream" },
           { name: "Wisconsin Cheese Curds Flavor", price: "$5.99", description: "Unique sweet & salty combination" },
@@ -136,6 +160,12 @@ export class MemStorage implements IStorage {
         category: "healthy",
         location: "Farmers Market",
         phone: "(608) 555-0127",
+        businessLinks: {
+          website: "https://farmfreshkitchenmadison.com",
+          facebook: "https://facebook.com/farmfreshkitchen",
+          instagram: "https://instagram.com/farmfreshkitchenmadison",
+          orderOnline: "https://farmfreshkitchenmadison.com/order-online"
+        },
         menu: [
           { name: "Seasonal Salad Bowl", price: "$12.99", description: "Mixed greens with seasonal vegetables" },
           { name: "Farm Burger", price: "$13.99", description: "Grass-fed beef with local cheese" },
@@ -162,6 +192,12 @@ export class MemStorage implements IStorage {
         category: "asian",
         location: "State Street",
         phone: "(608) 555-0128",
+        businessLinks: {
+          website: "https://noodlenomadmadison.com",
+          facebook: "https://facebook.com/noodlenomad",
+          instagram: "https://instagram.com/noodlenomadmadison",
+          orderOnline: "https://postmates.com/store/noodle-nomad"
+        },
         menu: [
           { name: "Pad Thai", price: "$11.99", description: "Classic Thai noodles with tamarind sauce" },
           { name: "Korean Bibimbap", price: "$12.99", description: "Rice bowl with mixed vegetables and gochujang" },

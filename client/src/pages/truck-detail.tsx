@@ -157,38 +157,46 @@ export default function TruckDetail() {
                   <CardContent>
                     <div className="space-y-3">
                       <div className="flex flex-col gap-2">
-                        <a 
-                          href="#" 
-                          className="text-primary hover:text-primary/80 transition-colors"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Visit Website
-                        </a>
-                        <a 
-                          href="#" 
-                          className="text-primary hover:text-primary/80 transition-colors"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Facebook Page
-                        </a>
-                        <a 
-                          href="#" 
-                          className="text-primary hover:text-primary/80 transition-colors"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Instagram
-                        </a>
-                        <a 
-                          href="#" 
-                          className="text-primary hover:text-primary/80 transition-colors"
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          Order Online
-                        </a>
+                        {truck.businessLinks?.website && (
+                          <a 
+                            href={truck.businessLinks.website} 
+                            className="text-primary hover:text-primary/80 transition-colors"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Visit Website
+                          </a>
+                        )}
+                        {truck.businessLinks?.facebook && (
+                          <a 
+                            href={truck.businessLinks.facebook} 
+                            className="text-primary hover:text-primary/80 transition-colors"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Facebook Page
+                          </a>
+                        )}
+                        {truck.businessLinks?.instagram && (
+                          <a 
+                            href={truck.businessLinks.instagram} 
+                            className="text-primary hover:text-primary/80 transition-colors"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Instagram
+                          </a>
+                        )}
+                        {truck.businessLinks?.orderOnline && (
+                          <a 
+                            href={truck.businessLinks.orderOnline} 
+                            className="text-primary hover:text-primary/80 transition-colors"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            Order Online
+                          </a>
+                        )}
                       </div>
                     </div>
                   </CardContent>

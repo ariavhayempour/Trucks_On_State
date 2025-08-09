@@ -13,6 +13,7 @@ export const foodTrucks = pgTable("food_trucks", {
   phone: text("phone").notNull(),
   menu: json("menu").$type<MenuItem[]>().notNull(),
   schedule: json("schedule").$type<Schedule>().notNull(),
+  businessLinks: json("business_links").$type<BusinessLinks>(),
 });
 
 export interface MenuItem {
@@ -23,6 +24,13 @@ export interface MenuItem {
 
 export interface Schedule {
   [key: string]: string; // day of week -> hours string
+}
+
+export interface BusinessLinks {
+  website?: string;
+  facebook?: string;
+  instagram?: string;
+  orderOnline?: string;
 }
 
 export const insertFoodTruckSchema = createInsertSchema(foodTrucks).omit({
