@@ -119,10 +119,10 @@ export default function TruckDetail() {
                   </CardHeader>
                   <CardContent>
                     <div className="space-y-2">
-                      {['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']}.map((day) => (
+                      {['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'].map((day) => (
                         <div key={day} className="flex justify-between">
                           <span className="font-medium">{day}</span>
-                          <span className="text-gray-600">{hours}</span>
+                          <span className="text-gray-600">9:00 AM - 5:00 PM</span>
                         </div>
                       ))}
                     </div>
