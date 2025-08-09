@@ -149,58 +149,60 @@ export default function TruckDetail() {
                   </CardContent>
                 </Card>
 
-                {/* Business Links */}
-                <Card>
-                  <CardHeader>
-                    <CardTitle>Business Links</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <div className="space-y-3">
-                      <div className="flex flex-col gap-2">
-                        {truck.businessLinks?.website && (
-                          <a 
-                            href={truck.businessLinks.website} 
-                            className="text-primary hover:text-primary/80 transition-colors"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            Visit Website
-                          </a>
-                        )}
-                        {truck.businessLinks?.facebook && (
-                          <a 
-                            href={truck.businessLinks.facebook} 
-                            className="text-primary hover:text-primary/80 transition-colors"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            Facebook Page
-                          </a>
-                        )}
-                        {truck.businessLinks?.instagram && (
-                          <a 
-                            href={truck.businessLinks.instagram} 
-                            className="text-primary hover:text-primary/80 transition-colors"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            Instagram
-                          </a>
-                        )}
-                        {truck.businessLinks?.orderOnline && (
-                          <a 
-                            href={truck.businessLinks.orderOnline} 
-                            className="text-primary hover:text-primary/80 transition-colors"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            Order Online
-                          </a>
-                        )}
+                {/* Business Links - Hide for Fresh Cool Drinks */}
+                {truck.slug !== "fresh-cool" && (
+                  <Card>
+                    <CardHeader>
+                      <CardTitle>Business Links</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <div className="space-y-3">
+                        <div className="flex flex-col gap-2">
+                          {truck.businessLinks?.website && (
+                            <a 
+                              href={truck.businessLinks.website} 
+                              className="text-primary hover:text-primary/80 transition-colors"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Visit Website
+                            </a>
+                          )}
+                          {truck.businessLinks?.facebook && (
+                            <a 
+                              href={truck.businessLinks.facebook} 
+                              className="text-primary hover:text-primary/80 transition-colors"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Facebook Page
+                            </a>
+                          )}
+                          {truck.businessLinks?.instagram && (
+                            <a 
+                              href={truck.businessLinks.instagram} 
+                              className="text-primary hover:text-primary/80 transition-colors"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Instagram
+                            </a>
+                          )}
+                          {truck.businessLinks?.orderOnline && (
+                            <a 
+                              href={truck.businessLinks.orderOnline} 
+                              className="text-primary hover:text-primary/80 transition-colors"
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              Order Online
+                            </a>
+                          )}
+                        </div>
                       </div>
-                    </div>
-                  </CardContent>
-                </Card>
+                    </CardContent>
+                  </Card>
+                )}
               </div>
             </div>
           </div>
