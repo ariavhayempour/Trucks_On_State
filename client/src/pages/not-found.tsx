@@ -1,7 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { AlertCircle } from "lucide-react";
 
-export default function NotFound() {
+export default function PageNotFoundError() {
   return (
     <div className="not-found-page-container">
       <Card className="not-found-card">

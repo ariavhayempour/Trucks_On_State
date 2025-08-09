@@ -1,8 +1,8 @@
 import { useParams } from "wouter";
 import { useQuery } from "@tanstack/react-query";
 import { Link } from "wouter";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
+import SiteNavigationHeader from "@/components/header";
+import SiteContactFooter from "@/components/footer";
 import { isCurrentlyOpen } from "@/lib/utils";
 import { ArrowLeft, MapPin, Phone, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -10,7 +10,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Skeleton } from "@/components/ui/skeleton";
 import type { FoodTruck } from "@shared/schema";
 
-export default function TruckDetail() {
+export default function IndividualFoodTruckDetailPage() {
   const { slug } = useParams<{ slug: string }>();
 
   const { data: truck, isLoading, error } = useQuery<FoodTruck>({
@@ -20,7 +20,7 @@ export default function TruckDetail() {
   if (error) {
     return (
       <div className="min-h-screen bg-gray-50">
-        <Header />
+        <SiteNavigationHeader />
         <div className="max-w-4xl mx-auto px-4 py-16">
           <div className="text-center">
             <h1 className="text-2xl font-bold text-gray-900 mb-4">Food Truck Not Found</h1>
@@ -33,14 +33,14 @@ export default function TruckDetail() {
             </Link>
           </div>
         </div>
-        <Footer />
+        <SiteContactFooter />
       </div>
     );
   }
 
   return (
     <div className="min-h-screen bg-gray-50">
-      <Header />
+      <SiteNavigationHeader />
       
       <div className="max-w-6xl mx-auto px-4 py-8">
         <Link href="/">
@@ -209,7 +209,7 @@ export default function TruckDetail() {
         )}
       </div>
       
-      <Footer />
+      <SiteContactFooter />
     </div>
   );
 }

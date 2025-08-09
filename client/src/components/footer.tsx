@@ -1,7 +1,7 @@
 import { Truck, Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "wouter";
 
-export default function Footer() {
+export default function SiteContactFooter() {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {

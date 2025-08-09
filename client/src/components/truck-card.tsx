@@ -9,7 +9,7 @@ interface TruckCardProps {
   truck: FoodTruck;
 }
 
-export default function TruckCard({ truck }: TruckCardProps) {
+export default function IndividualFoodTruckCard({ truck }: TruckCardProps) {
   const isOpen = isCurrentlyOpen(truck.schedule);
   
   return (

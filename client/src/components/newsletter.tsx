@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useToast } from "@/hooks/use-toast";
 
-export default function Newsletter() {
+export default function FoodTruckNewsletterSignup() {
   const [email, setEmail] = useState("");
   const { toast } = useToast();
 

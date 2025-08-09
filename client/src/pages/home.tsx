@@ -1,16 +1,16 @@
-import Header from "@/components/header";
-import Hero from "@/components/hero";
-import SearchFilter from "@/components/search-filter";
-import TruckCard from "@/components/truck-card";
-import About from "@/components/about";
-import Newsletter from "@/components/newsletter";
-import Footer from "@/components/footer";
+import SiteNavigationHeader from "@/components/header";
+import FoodTruckHeroBanner from "@/components/hero";
+import FoodTruckSearchAndFilter from "@/components/search-filter";
+import IndividualFoodTruckCard from "@/components/truck-card";
+import TrucksOnStateAboutSection from "@/components/about";
+import FoodTruckNewsletterSignup from "@/components/newsletter";
+import SiteContactFooter from "@/components/footer";
 import { useQuery } from "@tanstack/react-query";
 import { useState } from "react";
 import type { FoodTruck } from "@shared/schema";
 import { Skeleton } from "@/components/ui/skeleton";
 
-export default function Home() {
+export default function MadisonFoodTruckHomePage() {
   const [searchQuery, setSearchQuery] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("all");
 
@@ -30,9 +30,9 @@ export default function Home() {
 
   return (
     <div className="home-page-container">
-      <Header />
-      <Hero />
-      <SearchFilter
+      <SiteNavigationHeader />
+      <FoodTruckHeroBanner />
+      <FoodTruckSearchAndFilter
         searchQuery={searchQuery}
         onSearchChange={setSearchQuery}
         selectedCategory={selectedCategory}
@@ -89,16 +89,16 @@ export default function Home() {
           {trucks && filteredTrucks.length > 0 && (
             <div className="home-trucks-active-grid">
               {filteredTrucks.map((truck) => (
-                <TruckCard key={truck.id} truck={truck} />
+                <IndividualFoodTruckCard key={truck.id} truck={truck} />
               ))}
             </div>
           )}
         </div>
       </section>
       
-      <About />
-      <Newsletter />
-      <Footer />
+      <TrucksOnStateAboutSection />
+      <FoodTruckNewsletterSignup />
+      <SiteContactFooter />
     </div>
   );
 }

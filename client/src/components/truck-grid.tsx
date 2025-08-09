@@ -1,11 +1,11 @@
 import { useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import type { FoodTruck } from "@shared/schema";
-import SearchFilter from "./search-filter";
-import TruckCard from "./truck-card";
+import FoodTruckSearchAndFilter from "./search-filter";
+import IndividualFoodTruckCard from "./truck-card";
 import { Skeleton } from "@/components/ui/skeleton";
 
-export default function TruckGrid() {
+export default function FoodTruckListingGrid() {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedFilter, setSelectedFilter] = useState("all");
 
@@ -22,7 +22,7 @@ export default function TruckGrid() {
 
   return (
     <>
-      <SearchFilter
+      <FoodTruckSearchAndFilter
         searchQuery={searchTerm}
         onSearchChange={setSearchTerm}
         selectedCategory={selectedFilter}
@@ -58,7 +58,7 @@ export default function TruckGrid() {
           ) : filteredTrucks && filteredTrucks.length > 0 ? (
             <div className="trucks-active-grid">
               {filteredTrucks.map((truck) => (
-                <TruckCard key={truck.id} truck={truck} />
+                <IndividualFoodTruckCard key={truck.id} truck={truck} />
               ))}
             </div>
           ) : (

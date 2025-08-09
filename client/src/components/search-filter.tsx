@@ -19,7 +19,7 @@ const categories = [
   { value: "asian", label: "Asian" },
 ];
 
-export default function SearchFilter({
+export default function FoodTruckSearchAndFilter({
   searchQuery,
   onSearchChange,
   selectedCategory,

@@ -3,29 +3,29 @@ import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
-import Home from "@/pages/home";
-import TruckDetail from "@/pages/truck-detail";
-import NotFound from "@/pages/not-found";
+import MadisonFoodTruckHomePage from "@/pages/home";
+import IndividualFoodTruckDetailPage from "@/pages/truck-detail";
+import PageNotFoundError from "@/pages/not-found";
 
-function Router() {
+function ApplicationRouter() {
   return (
     <Switch>
-      <Route path="/" component={Home} />
-      <Route path="/truck/:slug" component={TruckDetail} />
-      <Route component={NotFound} />
+      <Route path="/" component={MadisonFoodTruckHomePage} />
+      <Route path="/truck/:slug" component={IndividualFoodTruckDetailPage} />
+      <Route component={PageNotFoundError} />
     </Switch>
   );
 }
 
-function App() {
+function MadisonFoodTruckFinderApplication() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
         <Toaster />
-        <Router />
+        <ApplicationRouter />
       </TooltipProvider>
     </QueryClientProvider>
   );
 }
 
-export default App;
+export default MadisonFoodTruckFinderApplication;

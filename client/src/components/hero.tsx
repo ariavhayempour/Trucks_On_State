@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 
-export default function Hero() {
+export default function FoodTruckHeroBanner() {
   const scrollToTrucks = () => {
     const element = document.getElementById('trucks');
     if (element) {

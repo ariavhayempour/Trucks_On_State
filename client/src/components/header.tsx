@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { Truck, Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
-export default function Header() {
+export default function SiteNavigationHeader() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {

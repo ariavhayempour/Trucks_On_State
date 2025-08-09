@@ -2,7 +2,7 @@ import { Truck, MapPin } from "lucide-react";
 
 import state_street_vimal_1 from "@assets/state-street-vimal-1.jpg";
 
-export default function About() {
+export default function TrucksOnStateAboutSection() {
   return (
     <section id="about" className="about-section">
       <div className="about-container">
