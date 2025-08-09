@@ -118,8 +118,8 @@ export default function TruckDetail() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
-                      {Object.entries(truck.schedule).map(([day, hours]) => (
+                    <div className="space-y-2">
+                      {['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']}.map((day) => (
                         <div key={day} className="flex justify-between">
                           <span className="font-medium">{day}</span>
                           <span className="text-gray-600">{hours}</span>
