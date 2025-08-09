@@ -24,7 +24,7 @@ export class MemStorage implements IStorage {
         // Fresh cool drinks
         slug: "fresh-cool",
         name: "Fresh Cool Drinks",
-        description: "Cold smoothies and authentic home-recipe springrolls!",
+        description: "Cold smoothies and authentic springrolls!",
         image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
         category: "asian",
         location: "State Street & Library Mall",
@@ -51,7 +51,7 @@ export class MemStorage implements IStorage {
       {
         slug: "toast",
         name: "Toast",
-        description: "Made to order paninis with frsh ingredients and homemade sauces!",
+        description: "Made to order paninis with fresh ingredients and homemade sauces!",
         image: "TBD",
         category: "tacos",
         location: "State Street & Library Mall",
