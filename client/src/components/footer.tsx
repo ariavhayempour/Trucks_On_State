@@ -59,23 +59,7 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div>
-            
-            <ul className="space-y-2 text-gray-300">
-              <li className="flex items-center">
-                <Mail className="w-4 h-4 mr-2" />
-                info@trucksonstate.com
-              </li>
-              <li className="flex items-center">
-                <Phone className="w-4 h-4 mr-2" />
-                (608) 555-FOOD
-              </li>
-              <li className="flex items-center">
-                <MapPin className="w-4 h-4 mr-2" />
-                Madison, WI
-              </li>
-            </ul>
-          </div>
+          
         </div>
         <div className="border-t border-gray-800 mt-8 pt-8 text-center">
           <p className="text-gray-300">&copy; 2024 Trucks on State. All rights reserved.</p>
