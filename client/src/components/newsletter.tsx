@@ -29,9 +29,9 @@ export default function FoodTruckNewsletterSignup() {
   return (
     <section className="newsletter-section">
       <div className="newsletter-container">
-        <h2 className="newsletter-title">Stay Updated</h2>
+        <h2 className="newsletter-title">Questions, comments, or concerns?</h2>
         <p className="newsletter-description">
-          Get notifications about new food trucks, special events, and exclusive deals around Madison.
+          Write us a message and let us know! We'll get back to you as soon as we can.
         </p>
         <form onSubmit={handleSubmit} className="newsletter-form">
           <Input

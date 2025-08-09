@@ -87,20 +87,18 @@ export class MemStorage implements IStorage {
         }
       },
 
-      // Smoky's BBQ
+      // Sandwich Hub
       {
-        slug: "smokys-bbq",
-        name: "Smoky's BBQ",
-        description: "Slow-smoked meats with traditional Wisconsin BBQ flavors and homemade sides",
-        image: "https://images.unsplash.com/photo-1544025162-d76694265947?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
-        category: "bbq",
-        location: "University Avenue",
-        phone: "(608) 555-0125",
+        slug: "sandwich-hub",
+        name: "Sandwich Hub",
+        description: "Sandwich pop-up food cart with in-house daily baked bread!",
+        image: "TBD",
+        category: "sandwich",
+        location: "State Street & Library Mall",
+        phone: "TBD",
         businessLinks: {
-          website: "https://smokysbbqmadison.com",
-          facebook: "https://facebook.com/smokysbbq",
-          instagram: "https://instagram.com/smokysbbqmadison",
-          orderOnline: "https://ubereats.com/store/smokys-bbq"
+          website: "https://www.sandwichhubmadison.com",
+          instagram: "https://www.instagram.com/sandwich.hub.madison?igsh=cWFsdmVkMHBqenM4",
         },
         menu: [
           { name: "Pulled Pork Sandwich", price: "$11.99", description: "Slow-smoked pulled pork with BBQ sauce" },
@@ -111,13 +109,13 @@ export class MemStorage implements IStorage {
           { name: "Coleslaw", price: "$3.99", description: "Fresh coleslaw with tangy dressing" }
         ],
         schedule: {
-          "Monday": "Closed",
-          "Tuesday": "11:00 AM - 8:00 PM",
-          "Wednesday": "11:00 AM - 8:00 PM",
-          "Thursday": "11:00 AM - 8:00 PM",
-          "Friday": "11:00 AM - 9:00 PM",
-          "Saturday": "11:00 AM - 9:00 PM",
-          "Sunday": "12:00 PM - 7:00 PM"
+          "Monday": "11:00 am - 2:00 pm",
+          "Tuesday": "11:00 am - 2:00 pm",
+          "Wednesday": "11:00 am - 2:00 pm",
+          "Thursday": "11:00 AM - 2:00 PM",
+          "Friday": "11:00 AM - 2:00 PM",
+          "Saturday": "Closed",
+          "Sunday": "Closed"
         }
       },
       {

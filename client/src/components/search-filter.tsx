@@ -15,7 +15,6 @@ const categories = [
   { value: "tacos", label: "Tacos" },
   { value: "bbq", label: "BBQ" },
   { value: "desserts", label: "Desserts" },
-  { value: "healthy", label: "Healthy" },
   { value: "asian", label: "Asian" },
 ];
 
