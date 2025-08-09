@@ -2,7 +2,7 @@ import { Link } from "wouter";
 import { MapPin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { capitalizeFirst } from "@/lib/utils";
+import { capitalizeFirst, isCurrentlyOpen } from "@/lib/utils";
 import type { FoodTruck } from "@shared/schema";
 
 interface TruckCardProps {
@@ -10,6 +10,8 @@ interface TruckCardProps {
 }
 
 export default function TruckCard({ truck }: TruckCardProps) {
+  const isOpen = isCurrentlyOpen(truck.schedule);
+  
   return (
     <Card className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
       <img 
@@ -28,9 +30,9 @@ export default function TruckCard({ truck }: TruckCardProps) {
         </div>
         <div className="flex items-center justify-between">
           <span className={`text-sm font-medium ${
-            truck.isOpen ? 'text-secondary-600' : 'text-red-600'
+            isOpen ? 'text-secondary-600' : 'text-red-600'
           }`}>
-            {truck.isOpen ? 'Open Now' : 'Closed'}
+            {isOpen ? 'Open Now' : 'Closed'}
           </span>
           <Link href={`/truck/${truck.slug}`}>
             <Button className="bg-primary text-white hover:bg-primary-600 transition-colors">

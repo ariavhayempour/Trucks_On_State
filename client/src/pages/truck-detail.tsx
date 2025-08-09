@@ -3,6 +3,7 @@ import { useQuery } from "@tanstack/react-query";
 import { Link } from "wouter";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import { isCurrentlyOpen } from "@/lib/utils";
 import { ArrowLeft, MapPin, Phone, Clock } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -77,11 +78,11 @@ export default function TruckDetail() {
               />
               <div className="absolute top-4 right-4">
                 <span className={`px-3 py-1 rounded-full text-sm font-medium ${
-                  truck.isOpen 
+                  isCurrentlyOpen(truck.schedule) 
                     ? 'bg-green-100 text-green-800' 
                     : 'bg-red-100 text-red-800'
                 }`}>
-                  {truck.isOpen ? 'Open Now' : 'Closed'}
+                  {isCurrentlyOpen(truck.schedule) ? 'Open Now' : 'Closed'}
                 </span>
               </div>
             </div>

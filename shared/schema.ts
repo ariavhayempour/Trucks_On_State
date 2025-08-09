@@ -11,7 +11,6 @@ export const foodTrucks = pgTable("food_trucks", {
   category: text("category").notNull(),
   location: text("location").notNull(),
   phone: text("phone").notNull(),
-  isOpen: boolean("is_open").notNull().default(false),
   menu: json("menu").$type<MenuItem[]>().notNull(),
   schedule: json("schedule").$type<Schedule>().notNull(),
 });

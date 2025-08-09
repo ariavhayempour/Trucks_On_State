@@ -21,6 +21,7 @@ export class MemStorage implements IStorage {
   private seedData() {
     const sampleTrucks: InsertFoodTruck[] = [
       {
+        // Fresh cool drinks
         slug: "fresh-cool",
         name: "Fresh Cool Drinks",
         description: "Cold smoothies and authentic home-recipe springrolls!",
@@ -28,7 +29,6 @@ export class MemStorage implements IStorage {
         category: "asian",
         location: "State Street & Library Mall",
         phone: "N/A",
-        isOpen: true,
         menu: [
           { name: "Classic Badger Burger", price: "$12.99", description: "Wisconsin beef, cheese, lettuce, tomato, onion" },
           { name: "Cheese Curd Burger", price: "$14.99", description: "Beef burger topped with fried cheese curds" },
@@ -37,15 +37,17 @@ export class MemStorage implements IStorage {
           { name: "Sweet Potato Fries", price: "$4.99", description: "Crispy sweet potato fries with dipping sauce" }
         ],
         schedule: {
-          "Monday": "TBD",
-          "Tuesday": "TBD",
-          "Wednesday": "TBD",
-          "Thursday": "TBD",
-          "Friday": "TBD",
-          "Saturday": "TBD",
-          "Sunday": "TBD"
+          "Monday": "10:00 am - 6:00 pm",
+          "Tuesday": "10:00 am - 6:00 pm",
+          "Wednesday": "10:00 am - 6:00 pm",
+          "Thursday": "10:00 am - 6:00 pm",
+          "Friday": "10:00 am - 6:00 pm",
+          "Saturday": "10:00 am - 7:30 pm",
+          "Sunday": "10:00 am - 6:00 pm"
         }
       },
+
+      // Toast
       {
         slug: "toast",
         name: "Toast",
@@ -54,7 +56,6 @@ export class MemStorage implements IStorage {
         category: "tacos",
         location: "State Street & Library Mall",
         phone: "TBD",
-        isOpen: true,
         menu: [
           { name: "Carnitas Tacos", price: "$3.50", description: "Slow-cooked pork with onions and cilantro" },
           { name: "Carne Asada Tacos", price: "$3.75", description: "Grilled steak with fresh salsa verde" },
@@ -81,7 +82,6 @@ export class MemStorage implements IStorage {
         category: "bbq",
         location: "University Avenue",
         phone: "(608) 555-0125",
-        isOpen: false,
         menu: [
           { name: "Pulled Pork Sandwich", price: "$11.99", description: "Slow-smoked pulled pork with BBQ sauce" },
           { name: "Brisket Platter", price: "$16.99", description: "Sliced brisket with two sides" },
@@ -108,7 +108,6 @@ export class MemStorage implements IStorage {
         category: "desserts",
         location: "Memorial Union Terrace",
         phone: "(608) 555-0126",
-        isOpen: true,
         menu: [
           { name: "Vanilla Bean Ice Cream", price: "$4.99", description: "Madagascar vanilla with local cream" },
           { name: "Wisconsin Cheese Curds Flavor", price: "$5.99", description: "Unique sweet & salty combination" },
@@ -135,7 +134,6 @@ export class MemStorage implements IStorage {
         category: "healthy",
         location: "Farmers Market",
         phone: "(608) 555-0127",
-        isOpen: true,
         menu: [
           { name: "Seasonal Salad Bowl", price: "$12.99", description: "Mixed greens with seasonal vegetables" },
           { name: "Farm Burger", price: "$13.99", description: "Grass-fed beef with local cheese" },
@@ -162,7 +160,6 @@ export class MemStorage implements IStorage {
         category: "asian",
         location: "State Street",
         phone: "(608) 555-0128",
-        isOpen: false,
         menu: [
           { name: "Pad Thai", price: "$11.99", description: "Classic Thai noodles with tamarind sauce" },
           { name: "Korean Bibimbap", price: "$12.99", description: "Rice bowl with mixed vegetables and gochujang" },
