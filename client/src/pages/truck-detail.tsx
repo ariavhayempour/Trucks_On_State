@@ -103,10 +103,6 @@ export default function TruckDetail() {
                     <MapPin className="w-5 h-5 mr-3" />
                     <span>{truck.location}</span>
                   </div>
-                  <div className="flex items-center text-gray-600">
-                    <Phone className="w-5 h-5 mr-3" />
-                    <span>{truck.phone}</span>
-                  </div>
                 </div>
 
                 {/* Schedule */}
