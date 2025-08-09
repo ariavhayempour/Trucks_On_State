@@ -1,5 +1,4 @@
 import { Truck, Mail, Phone, MapPin } from "lucide-react";
-import { FaFacebook, FaTwitter, FaInstagram } from "react-icons/fa";
 import { Link } from "wouter";
 
 export default function Footer() {
@@ -19,17 +18,6 @@ export default function Footer() {
               <Truck className="brand-icon" />
               Trucks on State
             </h3>
-            <div className="social-media-container">
-              <a href="#" className="facebook-link">
-                <FaFacebook className="facebook-icon" />
-              </a>
-              <a href="#" className="twitter-link">
-                <FaTwitter className="twitter-icon" />
-              </a>
-              <a href="#" className="instagram-link">
-                <FaInstagram className="instagram-icon" />
-              </a>
-            </div>
           </div>
           <div>
             <h4 className="quick-links-title">Quick Links</h4>
@@ -62,7 +50,7 @@ export default function Footer() {
           
         </div>
         <div className="footer-bottom">
-          <p className="copyright-text">&copy; 2024 Trucks on State. All rights reserved.</p>
+          <p className="copyright-text">&copy; 2025 Trucks on State. All rights reserved.</p>
         </div>
       </div>
     </footer>

@@ -51,9 +51,9 @@ export class MemStorage implements IStorage {
       {
         slug: "toast",
         name: "Toast",
-        description: "Made to order paninis with fresh ingredients and homemade sauces!",
+        description: "Made-to-order paninis with fresh ingredients and homemade sauces!",
         image: "TBD",
-        category: "tacos",
+        category: "sandwiches",
         location: "State Street & Library Mall",
         phone: "TBD",
         menu: [
@@ -65,15 +65,17 @@ export class MemStorage implements IStorage {
           { name: "Guacamole & Chips", price: "$6.99", description: "Fresh guacamole with house-made tortilla chips" }
         ],
         schedule: {
-          "Monday": "11:00 AM - 9:00 PM",
-          "Tuesday": "11:00 AM - 9:00 PM",
-          "Wednesday": "11:00 AM - 9:00 PM",
-          "Thursday": "11:00 AM - 10:00 PM",
-          "Friday": "11:00 AM - 11:00 PM",
-          "Saturday": "10:00 AM - 11:00 PM",
-          "Sunday": "12:00 PM - 8:00 PM"
+          "Monday": "TBD",
+          "Tuesday": "TBD",
+          "Wednesday": "TBD",
+          "Thursday": "TBD",
+          "Friday": "TBD",
+          "Saturday": "TBD",
+          "Sunday": "TBD"
         }
       },
+
+      // Smoky's BBQ
       {
         slug: "smokys-bbq",
         name: "Smoky's BBQ",
