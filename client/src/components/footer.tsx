@@ -14,8 +14,8 @@ export default function Footer() {
       <div className="footer-container">
         <div className="footer-grid">
           <div className="brand-section">
-            <h3 className="brand-title">
-              <Truck className="brand-icon" />
+            <h3 className="text-2xl font-bold flex items-center">
+              <Truck className="w-6 h-6 mr-2" />
               Trucks on State
             </h3>
           </div>
