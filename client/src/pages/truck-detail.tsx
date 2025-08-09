@@ -122,7 +122,7 @@ export default function TruckDetail() {
                       {['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'].map((day) => (
                         <div key={day} className="flex justify-between">
                           <span className="font-medium">{day}</span>
-                          <span className="text-gray-600">9:00 AM - 5:00 PM</span>
+                          <span className="text-gray-600">{truck.schedule[day]}</span>
                         </div>
                       ))}
                     </div>
