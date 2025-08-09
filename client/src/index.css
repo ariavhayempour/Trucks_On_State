@@ -119,3 +119,64 @@
 .hero-gradient {
   background: linear-gradient(135deg, hsl(25 95% 53%) 0%, hsl(22 82% 39%) 100%);
 }
+
+/* Footer Component Classes */
+.footer-background {
+  @apply bg-gray-900 text-white py-12;
+}
+
+.footer-container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.footer-grid {
+  @apply grid grid-cols-1 md:grid-cols-4 gap-8;
+}
+
+.brand-section {
+  @apply col-span-1 md:col-span-2;
+}
+
+.brand-title {
+  @apply text-2xl font-bold mb-4 flex items-center;
+}
+
+.brand-icon {
+  @apply w-6 h-6 mr-2;
+}
+
+.social-links {
+  @apply flex space-x-4;
+}
+
+.social-link {
+  @apply text-gray-300 hover:text-white transition-colors;
+}
+
+.social-icon {
+  @apply w-5 h-5;
+}
+
+.navigation-title {
+  @apply text-lg font-semibold mb-4;
+}
+
+.navigation-list {
+  @apply space-y-2;
+}
+
+.navigation-link {
+  @apply text-gray-300 hover:text-white transition-colors cursor-pointer;
+}
+
+.navigation-button {
+  @apply text-gray-300 hover:text-white transition-colors text-left;
+}
+
+.footer-bottom {
+  @apply border-t border-gray-800 mt-8 pt-8 text-center;
+}
+
+.copyright-text {
+  @apply text-gray-300;
+}

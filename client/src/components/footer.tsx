@@ -11,32 +11,32 @@ export default function Footer() {
   };
 
   return (
-    <footer id="contact" className="bg-gray-900 text-white py-12">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          <div className="col-span-1 md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4 flex items-center">
-              <Truck className="w-6 h-6 mr-2" />
+    <footer id="contact" className="footer-background">
+      <div className="footer-container">
+        <div className="footer-grid">
+          <div className="brand-section">
+            <h3 className="brand-title">
+              <Truck className="brand-icon" />
               Trucks on State
             </h3>
-            <div className="flex space-x-4">
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <FaFacebook className="w-5 h-5" />
+            <div className="social-links">
+              <a href="#" className="social-link">
+                <FaFacebook className="social-icon" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <FaTwitter className="w-5 h-5" />
+              <a href="#" className="social-link">
+                <FaTwitter className="social-icon" />
               </a>
-              <a href="#" className="text-gray-300 hover:text-white transition-colors">
-                <FaInstagram className="w-5 h-5" />
+              <a href="#" className="social-link">
+                <FaInstagram className="social-icon" />
               </a>
             </div>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
+            <h4 className="navigation-title">Quick Links</h4>
+            <ul className="navigation-list">
               <li>
                 <Link href="/">
-                  <span className="text-gray-300 hover:text-white transition-colors cursor-pointer">
+                  <span className="navigation-link">
                     Home
                   </span>
                 </Link>
@@ -44,7 +44,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => scrollToSection('trucks')}
-                  className="text-gray-300 hover:text-white transition-colors text-left"
+                  className="navigation-button"
                 >
                   Food Trucks
                 </button>
@@ -52,7 +52,7 @@ export default function Footer() {
               <li>
                 <button 
                   onClick={() => scrollToSection('about')}
-                  className="text-gray-300 hover:text-white transition-colors text-left"
+                  className="navigation-button"
                 >
                   About
                 </button>
@@ -61,8 +61,8 @@ export default function Footer() {
           </div>
           
         </div>
-        <div className="border-t border-gray-800 mt-8 pt-8 text-center">
-          <p className="text-gray-300">&copy; 2024 Trucks on State. All rights reserved.</p>
+        <div className="footer-bottom">
+          <p className="copyright-text">&copy; 2024 Trucks on State. All rights reserved.</p>
         </div>
       </div>
     </footer>
