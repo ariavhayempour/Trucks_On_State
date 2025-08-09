@@ -23,11 +23,11 @@ export class MemStorage implements IStorage {
       {
         slug: "fresh-cool",
         name: "Fresh Cool Drinks",
-        description: "Gourmet burgers with locally-sourced Wisconsin beef and fresh toppings",
+        description: "Cold smoothies and authentic home-recipe springrolls!",
         image: "https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
         category: "asian",
         location: "State Street & Library Mall",
-        phone: "(608) 555-0123",
+        phone: "N/A",
         isOpen: true,
         menu: [
           { name: "Classic Badger Burger", price: "$12.99", description: "Wisconsin beef, cheese, lettuce, tomato, onion" },
@@ -37,23 +37,23 @@ export class MemStorage implements IStorage {
           { name: "Sweet Potato Fries", price: "$4.99", description: "Crispy sweet potato fries with dipping sauce" }
         ],
         schedule: {
-          "Monday": "11:00 AM - 8:00 PM",
-          "Tuesday": "11:00 AM - 8:00 PM",
-          "Wednesday": "11:00 AM - 8:00 PM",
-          "Thursday": "11:00 AM - 9:00 PM",
-          "Friday": "11:00 AM - 10:00 PM",
-          "Saturday": "10:00 AM - 10:00 PM",
-          "Sunday": "12:00 PM - 6:00 PM"
+          "Monday": "TBD",
+          "Tuesday": "TBD",
+          "Wednesday": "TBD",
+          "Thursday": "TBD",
+          "Friday": "TBD",
+          "Saturday": "TBD",
+          "Sunday": "TBD"
         }
       },
       {
-        slug: "el-corazon",
-        name: "El Corazón Taco",
-        description: "Authentic Mexican street tacos with house-made salsas and fresh tortillas",
-        image: "https://images.unsplash.com/photo-1613514785940-daed07799d9b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=400",
+        slug: "toast",
+        name: "Toast",
+        description: "Made to order paninis with frsh ingredients and homemade sauces!",
+        image: "TBD",
         category: "tacos",
-        location: "Capitol Square",
-        phone: "(608) 555-0124",
+        location: "State Street & Library Mall",
+        phone: "TBD",
         isOpen: true,
         menu: [
           { name: "Carnitas Tacos", price: "$3.50", description: "Slow-cooked pork with onions and cilantro" },
