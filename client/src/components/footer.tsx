@@ -19,9 +19,6 @@ export default function Footer() {
               <Truck className="w-6 h-6 mr-2" />
               Trucks on State
             </h3>
-            <p className="text-gray-300 mb-4">
-              Madison's premier food truck discovery platform. Find the best mobile eats in the city.
-            </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-white transition-colors">
                 <FaFacebook className="w-5 h-5" />
@@ -60,18 +57,10 @@ export default function Footer() {
                   About
                 </button>
               </li>
-              <li>
-                <button 
-                  onClick={() => scrollToSection('contact')}
-                  className="text-gray-300 hover:text-white transition-colors text-left"
-                >
-                  Contact
-                </button>
-              </li>
             </ul>
           </div>
           <div>
-            <h4 className="text-lg font-semibold mb-4">Contact Info</h4>
+            
             <ul className="space-y-2 text-gray-300">
               <li className="flex items-center">
                 <Mail className="w-4 h-4 mr-2" />
