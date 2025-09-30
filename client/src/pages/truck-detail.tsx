@@ -244,6 +244,93 @@ export default function IndividualFoodTruckDetailPage() {
                                 ))}
                               </div>
                             </>
+                          ) : truck.slug === "roost" ? (
+                            <>
+                              {/* Chicken Tenders */}
+                              <div className="flex justify-between items-end mb-4 border-b-2 border-gray-300 pb-1">
+                                <h2 className="text-lg font-semibold text-gray-900">Chicken Tenders</h2>
+                                <div className="text-sm font-semibold text-gray-700 flex">
+                                  <span className="w-16 text-center">Tenders</span>
+                                  <span className="w-16 text-center">Meal</span>
+                                </div>
+                              </div>
+                              <div className="space-y-4 mb-6">
+                                {truck.menu.slice(0, 3).map((item, index) => (
+                                  <div key={index} className="border-b border-gray-200 pb-3 last:border-b-0 flex justify-between items-start">
+                                    <div className="flex-1">
+                                      <h5 className="font-medium text-gray-900">{item.name}</h5>
+                                      <p className="text-sm text-gray-600 mt-1">{item.description}</p>
+                                    </div>
+                                    <div className="flex items-center ml-4">
+                                      <span className="font-semibold text-primary w-16 text-center">{item.price}</span>
+                                      {item.price2 && <span className="font-semibold text-primary w-16 text-center">{item.price2}</span>}
+                                    </div>
+                                  </div>
+                                ))}
+                              </div>
+
+                              {/* Chicken Sandwiches */}
+                              <div className="flex justify-between items-end mb-4 border-b-2 border-gray-300 pb-1">
+                                <h2 className="text-lg font-semibold text-gray-900">Chicken Sandwiches</h2>
+                                <div className="text-sm font-semibold text-gray-700 flex">
+                                  <span className="w-16 text-center">Sandwich</span>
+                                  <span className="w-16 text-center">Meal</span>
+                                </div>
+                              </div>
+                              <div className="space-y-4 mb-6">
+                                {truck.menu.slice(3, 6).map((item, index) => (
+                                  <div key={index} className="border-b border-gray-200 pb-3 last:border-b-0 flex justify-between items-start">
+                                    <div className="flex-1">
+                                      <h5 className="font-medium text-gray-900">{item.name}</h5>
+                                      <p className="text-sm text-gray-600 mt-1">{item.description}</p>
+                                    </div>
+                                    <div className="flex items-center ml-4">
+                                      <span className="font-semibold text-primary w-16 text-center">{item.price}</span>
+                                      {item.price2 && <span className="font-semibold text-primary w-16 text-center">{item.price2}</span>}
+                                    </div>
+                                  </div>
+                                ))}
+                              </div>
+
+                              {/* Sides */}
+                              <div className="flex justify-between items-end mb-4 border-b-2 border-gray-300 pb-1">
+                                <h2 className="text-lg font-semibold text-gray-900">Sides</h2>
+                                <div className="text-sm font-semibold text-gray-700 flex">
+                                  <span className="w-16 text-center">Small</span>
+                                  <span className="w-16 text-center">Large</span>
+                                </div>
+                              </div>
+                              <div className="space-y-4 mb-6">
+                                {truck.menu.slice(6, 9).map((item, index) => (
+                                  <div key={index} className="border-b border-gray-200 pb-3 last:border-b-0 flex justify-between items-start">
+                                    <div className="flex-1">
+                                      <h5 className="font-medium text-gray-900">{item.name}</h5>
+                                      <p className="text-sm text-gray-600 mt-1">{item.description}</p>
+                                    </div>
+                                    <div className="flex items-center ml-4">
+                                      <span className="font-semibold text-primary w-16 text-center">{item.price}</span>
+                                      {item.price2 && <span className="font-semibold text-primary w-16 text-center">{item.price2}</span>}
+                                    </div>
+                                  </div>
+                                ))}
+                              </div>
+
+                              {/* Extras */}
+                              <h2 className="text-lg font-semibold text-gray-900 mb-4 underline">Extras</h2>
+                              <div className="space-y-4">
+                                {truck.menu.slice(9, 12).map((item, index) => (
+                                  <div key={index} className="border-b border-gray-200 pb-3 last:border-b-0">
+                                    <div className="flex justify-between items-start">
+                                      <div className="flex-1">
+                                        <h5 className="font-medium text-gray-900">{item.name}</h5>
+                                        <p className="text-sm text-gray-600 mt-1">{item.description}</p>
+                                      </div>
+                                      <span className="font-semibold text-primary ml-4">{item.price}</span>
+                                    </div>
+                                  </div>
+                                ))}
+                              </div>
+                            </>
                           ) : (
                             <div className="space-y-4">
                               {truck.menu.map((item, index) => (
