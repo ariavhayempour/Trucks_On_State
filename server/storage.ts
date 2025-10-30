@@ -293,24 +293,31 @@ export class MemStorage implements IStorage {
         },
         menu: [
           // Chicken Tenders
-          { name: "2-Piece Tenders", price: "$8.00 / $12.00", description: "" },
-          { name: "3-Piece Tenders", price: "$12.00 / $15.00", description: "" },
-          { name: "4-Piece Tenders", price: "$16.00 / $18.00", description: "" },
+          { name: "2-Piece Tenders", price: "$8.00 / $12.00", description: "", category: "Chicken Tenders" },
+          { name: "3-Piece Tenders", price: "$12.00 / $15.00", description: "", category: "Chicken Tenders" },
+          { name: "4-Piece Tenders", price: "$16.00 / $18.00", description: "", category: "Chicken Tenders" },
           
           // Chicken Sandwiches
-          { name: "Badgerville Spicy", price: "$10.00 / $14.00", description: "Fried chicken dipped in honey butter and seasoned with spicy dry rub. Topped with pickles and coleslaw on a brioche bun." },
-          { name: "Original", price: "$9.00 / $13.00", description: "Signature fried chicken topped with mayo and pickles on a brioche bun." },
-          { name: "Deluxe", price: "$10.00 / $14.00", description: "Signature fried chicken topped with lettuce, tomato, pickles, cheese, and mayo on a brioche bun." },
+          { name: "Badgerville Spicy", price: "$10.00 / $14.00", description: "Fried chicken dipped in honey butter and seasoned with spicy dry rub. Topped with pickles and coleslaw on a brioche bun.", category: "Chicken Sandwiches" },
+          { name: "Original", price: "$9.00 / $13.00", description: "Signature fried chicken topped with mayo and pickles on a brioche bun.", category: "Chicken Sandwiches" },
+          { name: "Deluxe", price: "$10.00 / $14.00", description: "Signature fried chicken topped with lettuce, tomato, pickles, cheese, and mayo on a brioche bun.", category: "Chicken Sandwiches" },
           
           // Sides
-          { name: "French Fries", price: "$4.00 / $6.00", description: "" },
-          { name: "Cheese Curds", price: "$6.00", description: "" },
-          { name: "Coleslaw", price: "$3.00", description: "" },
+          { name: "French Fries", price: "$4.00 / $6.00", description: "", category: "Sides" },
+          { name: "Cheese Curds", price: "$6.00", description: "", category: "Sides" },
+          { name: "Coleslaw", price: "$3.00", description: "", category: "Sides" },
           
           // Extras
-          { name: "Make it a Meal", price: "", description: "Includes french fries and a drink. Substitute cheese curds ($2.00). Substitute lemonade  (Small- $1.00) (Large- $2.00)" },
-          { name: "Roost Style", price: "", description: "Substitute mayo for Roost Sauce." },
-          { name: "Dip Chicken in Honey Butter", price: "$1.00", description: "" }
+          { name: "Make it a Meal", price: "", description: "Includes french fries and a drink. Substitute cheese curds ($2.00). Substitute lemonade  (Small- $1.00) (Large- $2.00)", category: "Extras" },
+          { name: "Roost Style", price: "", description: "Substitute mayo for Roost Sauce.", category: "Extras" },
+          { name: "Dip Chicken in Honey Butter", price: "$1.00", description: "", category: "Extras" },
+
+          // Spice Level
+          { name: "No Spice", price: "", description: "", category: "Spice Level" },
+          { name: "Mild", price: "", description: "", category: "Spice Level" },
+          { name: "Medium", price: "", description: "", category: "Spice Level" },
+          { name: "Hot", price: "", description: "", category: "Spice Level" },
+          { name: "Extra Hot", price: "$1.00", description: "", category: "Spice Level" }
         ],
         
         schedule: {
